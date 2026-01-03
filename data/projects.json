@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "id": "proj_001",
+      "name": "Annapoorna Layout",
+      "location": "Talur Road, Ballari",
+      "status": "Completed",
+      "overview": "A thoughtfully planned residential layout designed for long-term living and investment.",
+      "amenities": [
+        "Wide roads",
+        "Drainage & water",
+        "Street lighting",
+        "Green spaces"
+      ],
+      "approvals": ["DTCP"],
+      "images": [
+        "assets/images/projects/APL/1.jpg",
+        "assets/images/projects/APL/2.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "proj_002",
+      "name": "VV Colony",
+      "location": "Talur Road, Ballari",
+      "status": "Ongoing",
+      "overview": "VV Colony is an upcoming residential plotted development designed for peaceful living with strong future appreciation potential.",
+      "amenities": [
+        "Well-laid internal roads",
+        "Water & drainage system",
+        "Street lighting",
+        "Open spaces"
+      ],
+      "approvals": ["Local Authority Approval"],
+      "images": [
+        "assets/images/projects/vv_colony/1.jpg"
+      ],
+      "featured": true
+    }
+  ]
+}

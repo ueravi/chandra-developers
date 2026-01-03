@@ -1,0 +1,12 @@
+brand:
+  name: Chandra Developers
+  tagline: Transforming Land into Valuable Communities
+
+contact:
+  phone: "+91-XXXXXXXXXX"
+  email: "info@chandradevelopers.com"
+
+colors:
+  primary: "#0F2A1D"
+  background: "#F4F4F4"
+  accent: "#C9A14A"

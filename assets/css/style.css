@@ -1,0 +1,260 @@
+/* =========================================================
+   VIEWPORT & GLOBAL FIXES
+   ========================================================= */
+
+/* Mobile viewport fix */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
+    color: #1E1E1E;
+}
+
+/* Hide Streamlit default UI */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
+
+/* =========================================================
+   BRAND COLORS
+   ========================================================= */
+:root {
+    --primary: #0F2A1D;
+    --accent: #C9A14A;
+    --text-dark: #1E1E1E;
+    --text-light: #6B6B6B;
+    --card-bg: #FFFFFF;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+h1, h2, h3 {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.primary-btn,
+.primary-cta {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+}
+
+.primary-btn:hover,
+.primary-cta:hover {
+    background-color: #143B2A;
+    cursor: pointer;
+}
+
+.accent-btn {
+    background-color: var(--accent);
+    color: #000000;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================================================
+   PROJECT CARDS
+   ========================================================= */
+.project-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.project-location {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.project-status {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary);
+    margin: 8px 0;
+}
+
+.project-cta {
+    margin-top: 14px;
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.hero-text {
+    max-width: 620px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+.section {
+    padding: 70px 0;
+}
+
+.section-divider {
+    margin: 60px 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   MOBILE OPTIMIZATIONS
+   ========================================================= */
+@media (max-width: 768px) {
+
+    /* Headings */
+    h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Paragraphs & lists */
+    p, li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Hero */
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 40px 0;
+    }
+
+    .section-divider {
+        margin: 40px 0;
+    }
+
+    /* Cards */
+    .card,
+    .project-card {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* Project card text */
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-location {
+        font-size: 13px;
+    }
+
+    .project-status {
+        font-size: 12px;
+    }
+
+    /* Buttons – touch friendly */
+    button,
+    .primary-btn,
+    .primary-cta,
+    .accent-btn {
+        width: 100%;
+        min-height: 44px;
+        font-size: 15px;
+    }
+
+    /* Navbar (option-menu) */
+    .nav-link {
+        font-size: 13px !important;
+        padding: 6px 8px !important;
+    }
+}

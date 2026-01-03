@@ -1,0 +1,14 @@
+{
+  "testimonials": [
+    {
+      "name": "Ramesh Kumar",
+      "type": "Landowner",
+      "message": "Transparent and professional team. Highly recommended."
+    },
+    {
+      "name": "Anita Sharma",
+      "type": "Buyer",
+      "message": "Clear documentation and smooth buying experience."
+    }
+  ]
+}
